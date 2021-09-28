@@ -1,22 +1,38 @@
-<!DOCTYPE html>
 <html>
     <head>
-       <title>Portfolio</title>
+       <title>Bryson's Banana Website</title>
        <style>
-            body {background-color: black}
-            .all-headings {color: white}
-            .description-text {color: white}
+            body {background-color: rgb(254, 186, 15)}
+            .sitenav {background-color: rgb(225, 200, 78);
+                        border-radius: 40px;}
+            .all-headings {color: rgb(145, 118, 13)}
+            nav {
+                background: gold
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                border: solid 5px;
+                border-radius: 40px;}
+            .navli {
+                display: inline-block
+                padding: 0 10px;
+            }
        </style>
     </head>
 
     <body>
-        <nav>
-            <h2 class="all-headings"> Site Navigation</h2>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="portfolio.html">Portfolio</a>
-            </li>
-        </nav>
+        <div class="sitenav">
+            <nav>
+                <h2 class="all-headings"> Site Navigation</h2>
+                <ul id="navul">
+                    <li class="navli">
+                     <a href="index.html">Home</a>
+                    </li>
+                    <li class="navli">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
     </body>
+</html>
