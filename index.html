@@ -10,19 +10,33 @@
             .description-text {color: rgb(145, 118, 13)}
             .interests {color: rgb(145, 118, 13)}
             body {background-image: url('https://picfiles.alphacoders.com/322/thumb-1920-322813.jpg');}
+            #site-nav {
+                background-color: rgb(225, 200, 78);
+                border-radius: 40px;
+                }
+            #site-nav-text {
+                color: rgb(145, 118, 13);
+            }
             nav {
-                background: gold
+                background: gold;
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
                 border: solid 5px;
                 border-radius: 40px;}
             .nav-li {
-                display: inline-block
+                color: rgb(145, 118, 13);
+                display: inline-block;
                 padding: 0 10px;
             }
             .nav-ul {
-                display: inline-block
+                color: rgb(145, 118, 13);
+                display: inline-block;
+                padding: 0 10px;
+            }
+            .nav-a {
+                color: rgb(145, 118, 13);
+                display: inline-block;
                 padding: 0 10px;
             }
        </style>
@@ -32,13 +46,13 @@
         <main> 
             <div id="site-nav">
                 <nav>
-                    <h2 class="all-headings"> Site Navigation</h2>
+                    <h1 id="site-nav-text">Site Navigation</h1>
                     <ul id="nav-ul">
                         <li class="nav-li">
-                        <a href="index.html">Home</a>
+                          <a class="nav-a" href="index.html">Home</a>
                         </li>
                         <li class="nav-li">
-                            <a href="portfolio.html">Portfolio</a>
+                          <a class="nav-a" href="portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                 </nav>
