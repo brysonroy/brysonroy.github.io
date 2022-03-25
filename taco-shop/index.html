@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee Shop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            #menu, #take-order {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #take-order > p {
+                padding-right: 10px;
+            }
+
+            .menu-item {
+                border: 3px solid gray;
+            }
+
+            .menu-item > h4,
+            .menu-item > img {
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+            img {
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Coffee Shop</h1>
+                <div id="take-order">
+                    <p>When you're ready to place your order, click here: </p>
+                    <button>Place Order</button>
+                </div>
+            </nav>
+            <main>
+                <h3>Menu</h3>
+                <div id="menu">
+                    <div id="caramel-coffee" class="menu-item">
+                        <h4> #1 - Caramel Coffee</h4>
+                        <img src="https://www.tamingtwins.com/wp-content/uploads/2018/07/iced-coffee-recipe-11.jpg">
+                        <h4>Tall: $2.99 <br>
+                            Grande: $4.99 <br>
+                            Venti: $6.99</h4>
+                    </div>
+                    <div id="espresso-coffee" class="menu-item">
+                        <h4>#2 - Espresso</h4>
+                        <img src="https://coffeeatthree.com/wp-content/uploads/iced-shaken-espresso-featured.jpg">
+                        <h4>Tall: $3.99 <br>
+                            Grande: $6.99 </h4>
+                    </div>
+                    <div id="decaf-coffee" class="menu-item">
+                        <h4>#2 - Decaf Cold Brew</h4>
+                        <img src="https://www.grownupdish.com/wp-content/uploads/2018/08/Square-close-up-decaf-cold-brew.jpg">
+                        <h4>Tall: $1.99 <br>
+                            Grande: $3.99 <br>
+                            Venti: $5.99 </h4>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+            $('button').on('click', calculateTotal);
+        </script>
+    </body>
+</html>
